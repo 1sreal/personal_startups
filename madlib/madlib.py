@@ -15,3 +15,5 @@ print("The " + adjective1 + " " + noun1 + " " + verb1 + " through the " + adject
 print("The "+ noun1 + " came across a " + noun2 + " and decided to " + verb2 + " it.")
 print("As the "+ noun1 + " " + verb2 + " the " + noun2 + " it let out a loud " + adjective2 + " scream.")
 print("But the "+ noun1 + " didn't care and continued to " + verb2 + " the " + noun2 + ".")
+
+#You can add more inputs and variables to make the madlib story longer.
