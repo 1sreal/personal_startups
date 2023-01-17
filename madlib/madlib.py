@@ -16,4 +16,12 @@ print("The "+ noun1 + " came across a " + noun2 + " and decided to " + verb2 + "
 print("As the "+ noun1 + " " + verb2 + " the " + noun2 + " it let out a loud " + adjective2 + " scream.")
 print("But the "+ noun1 + " didn't care and continued to " + verb2 + " the " + noun2 + ".")
 
-#You can add more inputs and variables to make the madlib story longer.
+print("After a while, the " + noun1 + " grew tired and decided to rest.")
+print("It found a cozy spot under a " + adjective1 + " tree and closed its eyes.")
+print("As the " + noun1 + " lay there, it heard the sound of a nearby " + noun2 + " " + verb1 + ".")
+print("The " + noun1 + " thought to itself, 'This is the perfect place to call home, it's so " + adjective2 + " and peaceful.'")
+
+
+
+
+#You can add more inputs and variables to make the madlib story longer. 
