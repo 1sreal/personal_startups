@@ -11,3 +11,14 @@ riddles = {
     "I am the color of a cherry. What am I?": "red"
 }
 
+score = 0
+
+for riddle, answer in riddles.items():
+    guess = input(riddle + " ")
+    if guess.lower() == answer:
+        print("Correct!")
+        score += 1
+    else:
+        print("Incorrect. The answer is " + answer + ".")
+
+print("You got " + str(score) + " out of " + str(len(riddles)) + " correct.")
