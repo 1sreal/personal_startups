@@ -22,3 +22,5 @@ for riddle, answer in riddles.items():
         print("Incorrect. The answer is " + answer + ".")
 
 print("You got " + str(score) + " out of " + str(len(riddles)) + " correct.")
+
+
