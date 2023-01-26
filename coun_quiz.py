@@ -21,3 +21,15 @@ questions = [
     }
 ]
 
+score = 0
+for question in questions:
+    print(question["question"])
+    for i, option in enumerate(question["options"]):
+        print(f"{i+1}. {option}")
+    user_input = input("Enter your answer: ")
+    if user_input.lower() == question["answer"].lower():
+        print("Correct!")
+        score += 1
+    else:
+        print("Incorrect. The correct answer is: ", question["answer"])
+print("Quiz completed. Your score is: ", score)
