@@ -34,15 +34,4 @@ for question in questions:
         print("Incorrect. The correct answer is: ", question["answer"])
 print("Quiz completed. Your score is: ", score)
 
-## loop 
-"""while True:
-    user_input = input("Enter a number (or 'q' to quit): ")
-    if user_input == 'q':
-        break
-    try:
-        number = int(user_input)
-        for i in range(1, number + 1):
-            print(i)
-    except ValueError:
-        print("Invalid input. Please enter a number or 'q' to quit.")"""
 
