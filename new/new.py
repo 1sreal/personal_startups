@@ -13,4 +13,25 @@ def guess_the_number():
         guess = int(input("Enter your guess: "))
         attempts += 1
         
-       
+        # Check player's guess
+        if guess < number:
+            print("Too low, try again.")
+        elif guess > number:
+            print("Too high, try again.")
+        else:
+            print("You got it in", attempts, "attempts!")
+            play_again = input("Would you like to play again? (yes/no) ")
+            
+            # Use a switch case to handle user's answer
+            switch_play_again = {
+                "yes": True,
+                "no": False
+            }
+            
+            if switch_play_again.get(play_again.lower()):
+                guess_the_number()
+            else:
+                break
+
+# Start the game
+guess_the_number()
