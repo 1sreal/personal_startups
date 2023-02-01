@@ -19,6 +19,9 @@ def guess_the_number():
     else:
         clue2 = "between 51 and 100"
         
+    print("1st Clue: The number is", clue1)
+    print("2nd Clue: The number is", clue2)
+    
     while True:
         # Get player's guess
         guess = int(input("Enter your guess: "))
@@ -31,7 +34,6 @@ def guess_the_number():
             print("Too high, try again.")
         else:
             print("You got it in", attempts, "attempts!")
-            print("The number was", clue1, "and", clue2)
             play_again = input("Would you like to play again? (yes/no) ")
             
             # Use a switch case to handle user's answer
