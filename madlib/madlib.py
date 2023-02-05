@@ -24,4 +24,4 @@ print("The " + noun1 + " thought to itself, 'This is the perfect place to call h
 
 
 
-#You can add more inputs and variables to make the madlib story longer. 
+# You can add more inputs and variables to make the madlib story longer. 

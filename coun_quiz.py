@@ -33,5 +33,3 @@ for question in questions:
     else:
         print("Incorrect. The correct answer is: ", question["answer"])
 print("Quiz completed. Your score is: ", score)
-
-
