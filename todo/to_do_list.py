@@ -7,15 +7,26 @@
 # Create an empty dictionary to store the to-do list items
 todo_list = {}
 
-begin = input("WELCOME TO TO-DO LIST!!!\n Enter 1. To add to list.\n 2. To view list.\n q. To quit. ")
-while begin == "1":
-    input("Enter task (q to quit):")
-    if task == 'q':
+begin = input("WELCOME TO TO-DO LIST!!!\n Enter...\n 1. To add to list.\n")
+while True:
+    if begin == "1":
+        task = input("Enter new task ")
+
+        allowed_statuses = ["not started", "in progress", "done"]
+        status = input("Enter task status (not started, in progress, done): ")
+
+        if status in allowed_statuses:
+            todo_list[task] = status
+            print("\n " + task + ": " + status)
+        else:
+            print("Invalid status. Please enter only 'not started', 'in progress', or 'done'.")
+
+        quit = input("input q to quit:")
+        if quit == 'q':
+            exit()
+    else:
+        print("Kindly read the instructions carefully and try again\n")
         break
-     
-    status = input("Enter task status (not started, in progress, done): ")
-    todo_list[task] = status
-while begin == "2":
-    print(todo_list)
-    
+
+
 
