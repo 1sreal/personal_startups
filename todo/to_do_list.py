@@ -5,6 +5,7 @@
 # users should be able to mark lists as complete or incomplete
 
 # Create an empty dictionary to store the to-do list items
+# Create an empty dictionary to store the to-do list items
 todo_list = {}
 
 begin = input("WELCOME TO TO-DO LIST!!!\n Enter...\n 1. To add to list.\n")
@@ -13,20 +14,22 @@ while True:
         task = input("Enter new task ")
 
         allowed_statuses = ["not started", "in progress", "done"]
-        status = input("Enter task status (not started, in progress, done): ")
+        status = input("Enter task status (not started, in progress, or done): ")
 
         if status in allowed_statuses:
             todo_list[task] = status
-            print("\n " + task + ": " + status)
+            print("\n" + task + ": " + status)
         else:
             print("Invalid status. Please enter only 'not started', 'in progress', or 'done'.")
 
-        quit = input("input q to quit:")
+        # Print all the tasks and statuses
+        print("\nCurrent To-Do List:")
+        for key, value in todo_list.items():
+            print(key + ": " + value)
+        
+        quit = input("\nInput 'q' to quit, or enter any number to add another task: ")
         if quit == 'q':
             exit()
     else:
         print("Kindly read the instructions carefully and try again\n")
         break
-
-
-
