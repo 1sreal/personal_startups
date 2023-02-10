@@ -27,7 +27,7 @@ while True:
         for key, value in todo_list.items():
             print(key + ": " + value)
         
-        quit = input("\nInput 'q' to quit, or enter any number to add another task: ")
+        quit = input("\nInput 'q' to quit, or enter  add another task: ")
         if quit == 'q':
             exit()
     else:
